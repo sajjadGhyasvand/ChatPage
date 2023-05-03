@@ -44,11 +44,14 @@
         }
         .sender{
             border-radius: 10px 10px 0px 10px;
-          
+            background-color:#2787F5 ; 
+            color:white
         }
         .reciever{
 
             border-radius: 10px 10px 10px 0;
+            background-color:#dde9f1 ;
+             color:rgb(58, 81, 116);
         }
         .cinput{
             background-color: transparent;
@@ -58,19 +61,52 @@
         .cbutton:hover{
             opacity: 80%;
         }
+        .side-bar-sm{
+            background-color:#F6F9FB; 
+            height: 80vh;
+        }
+        .side-bar-md{
+            background-color:#F6F9FB; 
+            height: 100vh;
+        }
+        .side-bar-sm{
+            background-color:#F6F9FB;  height: 100vh;
+        }
+        .bg-main{
+            background-color: #EBF1F7;
+        }
+        .ctext-justify{
+            text-align: justify !important;
+        }
+        .chat-footer-md{
+            right:15px; 
+            background-color: #EBF1F7; 
+            height: 60px; 
+            width: 95%;
+        }
+        .chat-footer-sm{
+            right:22px; 
+            background-color: #EBF1F7;
+            height: 60px; 
+            width: 95%;
+        }
+        .chat-header{
+            right:21px; background-color: #EBF1F7; height: 60px; width: 100%;
+        }
     </style>
 </head>
 
-<body style="background-color: bisque;">
-    <div class="container">
-        <div class="row my-5   rounded overflow-auto" style="background-color: white;">
+<body class="mx-md-4">
+    <!-- MD -->
+    <div class="d-none d-md-block">
+        <div class="row my-5   rounded overflow-auto bg-white">
             <!-- side bar -->
-            <div class="col-md-4 py-2 overflow-auto" style="background-color:#F6F9FB;  height: 80vh;">
+            <div class="col-md-4 py-2 overflow-auto side-bar-sm">
                 <!-- search box -->
                 <div class="mb-5">
                     <form action="#">
                         <div class="input-group">
-                            <div class="input-group-text" style="background-color: #EBF1F7;">
+                            <div class="input-group-text bg-main">
                                 <div class="icon icon-lg">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -80,7 +116,7 @@
                                     </svg>
                                 </div>
                             </div>
-                            <input type="text" style="background-color: #EBF1F7;"
+                            <input type="text bg-main" 
                                 class="form-control form-control-lg px-3 no-focus shadow-none" placeholder="جستجو"
                                 aria-label="جستجو">
                         </div>
@@ -239,13 +275,13 @@
                     <div class="row  gy-3 d-block overflow-auto my-1 pb-5" style="height: 80vh;">
                         <!-- recieve message -->
                         <div class="col-md-auto d-flex justify-content-end align-items-center" >
-                            <div class="col-md-5 message reciever " style="background-color:#dde9f1 ; color:rgb(58, 81, 116);">
+                            <div class="col-md-5 message reciever " >
                                 <div class="row ">
                                     <div class="d-flex justify-content-start">
                                         <p class="fw-bold">سجاد غیاثوند </p>
                                     </div>
                                 </div>
-                                <p class="text-end" style="text-align: justify !important;">این متن تستی است.  </p>
+                                <p class="text-end ctext-justify" >این متن تستی است.  </p>
                                 <div class="row">
                                     <div class="px-3 d-flex justify-content-end">
                                         <p class="">1402/02/02|02:02</p>
@@ -259,8 +295,8 @@
                         </div>
                         <!-- send message -->
                         <div class="col-md-auto d-flex justify-content-start align-items-center" >
-                            <div class=" col-md-5 message sender" style="background-color:#2787F5 ; color:white">
-                                <p style="text-align: justify;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident aliquam architecto esse, sapiente tempora tenetur in fugit pariatur delectus velit dolor consequatur quod mollitia. Ipsa distinctio ex temporibus, alias blanditiis ea labore unde magnam? Voluptatem, quam! Repudiandae vel sunt at commodi, sit minima voluptatum quae consequatur dolorem nesciunt doloribus neque?</p>
+                            <div class=" col-md-5 message sender" >
+                                <p class="ctext-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident aliquam architecto esse, sapiente tempora tenetur in fugit pariatur delectus velit dolor consequatur quod mollitia. Ipsa distinctio ex temporibus, alias blanditiis ea labore unde magnam? Voluptatem, quam! Repudiandae vel sunt at commodi, sit minima voluptatum quae consequatur dolorem nesciunt doloribus neque?</p>
                                 <div class="row px-5">
                                     <div class="col-md-6 d-flex justify-content-end">
                                         <p class="">1402/02/02|02:02</p>
@@ -272,8 +308,8 @@
                             </div>
                         </div>
                         <div class="col-md-auto d-flex justify-content-start align-items-center" >  
-                            <div class=" col-md-5 message sender" style="background-color:#2787F5 ; color:white">
-                                <p style="text-align: justify;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident aliquam architecto esse, sapiente tempora tenetur in fugit pariatur delectus velit dolor consequatur quod mollitia. Ipsa distinctio ex temporibus, alias blanditiis ea labore unde magnam? Voluptatem, quam! Repudiandae vel sunt at commodi, sit minima voluptatum quae consequatur dolorem nesciunt doloribus neque?</p>
+                            <div class=" col-md-5 message sender">
+                                <p class="ctext-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident aliquam architecto esse, sapiente tempora tenetur in fugit pariatur delectus velit dolor consequatur quod mollitia. Ipsa distinctio ex temporibus, alias blanditiis ea labore unde magnam? Voluptatem, quam! Repudiandae vel sunt at commodi, sit minima voluptatum quae consequatur dolorem nesciunt doloribus neque?</p>
                                 <div class="row px-5">
                                     <div class="col-md-6 d-flex justify-content-end">
                                         <p class="">1402/02/02|02:02</p>
@@ -287,7 +323,7 @@
                     </div>
                 <!-- chat footer -->
                     <div class="row position-relative mb-2">
-                        <div class="col-md-12 position-absolute fixed-bottom rounded-pill"  style="right:15px; background-color: #EBF1F7; height: 60px; width: 95%;">
+                        <div class="col-md-12 position-absolute fixed-bottom rounded-pill chat-footer-md"  >
                             <form class="row d-flex  flex-row-reverse align-items=center">
                                 
                                 <div class="col-md-1 d-flex justify-content-end pt-1">
@@ -310,6 +346,148 @@
 
         </div>
     </div>
+   <!-- SM -->
+   <div class="d-block d-md-none">
+    <div class="row  rounded overflow-auto bg-white" >
+        <!-- contact page -->
+        <div class="d-none col-12 p-3 overflow-auto side-bar-sm">
+            <!-- search box -->
+            <div class="mb-5">
+                <form action="#">
+                    <div class="input-group">
+                        <div class="input-group-text" style="background-color: #EBF1F7;">
+                            <div class="icon icon-lg">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-search">
+                                    <circle cx="11" cy="11" r="8"></circle>
+                                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                                </svg>
+                            </div>
+                        </div>
+                        <input type="text" style="background-color: #EBF1F7;"
+                            class="form-control form-control-lg px-3 no-focus shadow-none" placeholder="جستجو"
+                            aria-label="جستجو">
+                    </div>
+                </form>
+            </div>
+            <!-- contacts -->
+            <section class="card-list">
+                <div class=" my-3 px-2 py-3  bg-white cards  active">
+                    <a href="#" class="text-dark text-decoration-none">
+                        <div class="row">
+                            <div class="col-3">
+                                <img src="data:image/png;base64,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"
+                                    class="img-fluid rounded-top" alt="">
+                            </div>
+                            <div class="col-9">
+                                <div class="d-flex align-items-center mb-3">
+                                    <h5 class="me-auto mb-0"> محمد پورنجفی</h5>
+                                    <span class="text-muted extra-small ms-2">12:45</span>
+                                </div>
+
+                                <div class="d-flex align-items-center">
+                                    <div class="line-clamp me-auto">
+                                        سلام خسته نباشید.
+                                    </div>
+                                    <div class="circle"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </section>
+        </div>
+        <!-- chat page -->
+        <div class="col-12  position-relative " >
+            <!-- chat header -->
+            <div class="row position-relative mb-2">
+                <div class="col-12 position-absolute fixed-top chat-header"  >
+                    <div class="d-flex justify-content-between">
+                        <p class="ps-4">سجاد غیاثوند</p>
+                        <a href="#" class="pe-5 fs-1" >
+                            <i class="bi bi-chevron-left"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- message box -->
+                <div class="row  gy-3 d-block overflow-auto my-1 pb-5 px-2 pt-5 vh-100" >
+                    <!-- recieve message -->
+                    <div class="col-md-auto d-flex justify-content-end align-items-center" >
+                        <div class="col-7 message reciever " >
+                            <div class="row ">
+                                <div class="d-flex justify-content-start">
+                                    <p class="fw-bold">سجاد غیاثوند </p>
+                                </div>
+                            </div>
+                            <p class="text-end" style="text-align: justify !important;">این متن تستی است.  </p>
+                            <div class="row">
+                                <div class="px-3 d-flex justify-content-end">
+                                    <p class="">1402/02/02|02:02</p>
+                                </div>
+                           
+                            </div>
+                        </div>
+                        <div class="col-md-1">
+                            <img class="p-2" width="70px" height="70px"  src="data:image/png;base64,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"   class="img-fluid rounded-top" alt="">
+                        </div>                                                
+                    </div>
+                    <!-- send message -->
+                    <div class="col-md-auto d-flex justify-content-start align-items-center" >
+                        <div class=" col-8 message sender">
+                            <p class="ctext-justify" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident aliquam architecto esse, sapiente tempora tenetur in fugit pariatur delectus velit dolor consequatur quod mollitia. Ipsa distinctio ex temporibus, alias blanditiis ea labore unde magnam? Voluptatem, quam! Repudiandae vel sunt at commodi, sit minima voluptatum quae consequatur dolorem nesciunt doloribus neque?</p>
+                            <div class="row px-5">
+                                <div class="col-6 d-flex justify-content-end">
+                                    <p class="">1402/02/02|02:02</p>
+                                </div>
+                                <div class="col-6 d-flex justify-content-end">
+                                    <i class="bi bi-eye-fill"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-auto d-flex justify-content-start align-items-center" >
+                        <div class=" col-8 message sender" >
+                            <p class="ctext-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident aliquam architecto esse, sapiente tempora tenetur in fugit pariatur delectus velit dolor consequatur quod mollitia. Ipsa distinctio ex temporibus, alias blanditiis ea labore unde magnam? Voluptatem, quam! Repudiandae vel sunt at commodi, sit minima voluptatum quae consequatur dolorem nesciunt doloribus neque?</p>
+                            <div class="row px-5">
+                                <div class="col-6 d-flex justify-content-end">
+                                    <p class="">1402/02/02|02:02</p>
+                                </div>
+                                <div class="col-6 d-flex justify-content-end">
+                                    <i class="bi bi-eye-fill"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            <!-- chat footer -->
+                <div class="row position-relative mb-2">
+                    <div class="col-12 position-absolute fixed-bottom rounded-pill chat-footer-sm" >
+                        <form class="row d-flex  flex-row-reverse align-items=center">
+                            
+                            <div class="col-1 d-flex justify-content-end pt-1">
+                                <a href="#">
+                                    <i class="bi bi-paperclip" style="font-size:2rem;"></i>
+                                </a>
+                            </div>
+                            <div class="col-10 pt-2 ">
+                                <input type="text" class="w-100 h-100 cinput px-2" placeholder="متن وارد کنید" />
+                            </div>
+                            <div class="col-1 d-flex align-items-center pt-2">
+                                <button class="submit btn btn-light rounded-pill cbutton " style="background-color: #2787F5;" >
+                                    <i class="bi bi-send text-white" style="font-size: 1rem;"></i>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+        </div>
+    </div>
+    </div>
+   </div>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
